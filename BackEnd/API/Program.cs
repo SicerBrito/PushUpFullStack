@@ -47,7 +47,7 @@ builder.Services.AddAuthorization(opts =>{
 //habilitamos la conexion a la base de datos 
 builder.Services.AddDbContext<DbAppContext>(options =>
 {
-    string ? connectionString = builder.Configuration.GetConnectionString("ConexMysqlWindows");
+    string ? connectionString = builder.Configuration.GetConnectionString("ConexMysqlLinux");
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
@@ -72,9 +72,9 @@ if (app.Environment.IsDevelopment())
 //activar migraciones pendientes 
 using (var scope = app.Services.CreateScope())
 {
-   var services = scope.ServiceProvider;
-   var loggerFactory = services.GetRequiredService<ILoggerFactory>();
-   try
+    var services = scope.ServiceProvider;
+    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+    try
     {
         var context = services.GetRequiredService<DbAppContext>();
         await context.Database.MigrateAsync();

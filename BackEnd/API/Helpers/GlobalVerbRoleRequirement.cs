@@ -11,6 +11,9 @@ namespace API.Helpers;
             if(string.Equals("Empleado", role, StringComparison.OrdinalIgnoreCase) && string.Equals("GET",verb, StringComparison.OrdinalIgnoreCase)){
                 return true;
             };
+            if(string.Equals("Cliente", role, StringComparison.OrdinalIgnoreCase) && string.Equals("GET",verb, StringComparison.OrdinalIgnoreCase)){
+                return true;
+            };
             if(string.Equals("Camper", role, StringComparison.OrdinalIgnoreCase) && string.Equals("GET",verb, StringComparison.OrdinalIgnoreCase)){
                 return true;
             };

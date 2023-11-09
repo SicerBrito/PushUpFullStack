@@ -11,12 +11,6 @@ namespace API.Profiles;
                 .ReverseMap();
 
                 
-            //TODO: Ejemplo
-            // CreateMap<NombreDto1, NombreEntidad1>()
-            //     .ReverseMap();
-
-            // CreateMap<NombreDto2, NombreEntidad2>()
-            //     .ReverseMap();
 
         }
     }
