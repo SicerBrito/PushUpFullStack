@@ -70,13 +70,13 @@ namespace Persistencia.Data.Configuracion;
                     Id = 1,
                     Username = "Sicer Brito",
                     Email = "britodelgado514@gmail.com",
-                    Password = "1234"
+                    Password = "123456"
                 },
                 new {
                     Id = 2,
                     Username = "Angelica Morales",
                     Email = "angedeveloper@gmail.com",
-                    Password = "12345"
+                    Password = "123456"
                 },
                 new {
                     Id = 3,

@@ -7,5 +7,6 @@ namespace Dominio.Entities;
         public double NroContacto { get; set; }
 
         public ICollection<ClienteCompra> ? ClienteCompras { get; set; }
+        public ICollection<CarritoCompra> ? CarritoCompras { get; set; }
 
     }

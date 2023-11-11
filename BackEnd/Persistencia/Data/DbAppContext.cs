@@ -15,7 +15,7 @@ namespace Persistencia.Data;
         public DbSet<RefreshToken> ? RefreshTokens { get; set; } = null!;
         public DbSet<CarritoCompra> ? CarritoCompras { get; set; } = null!;
         public DbSet<CategoriaProducto> ? CategoriaProductos { get; set; } = null!;
-        public DbSet<Cliente> ? Clientes { get; set; } = null!;
+        public DbSet<Cliente> ?  Clientes { get; set; } = null!;
         public DbSet<ClienteCompra> ? ClienteCompras { get; set; } = null!;
         public DbSet<Compra> ? Compras { get; set; } = null!;
         public DbSet<DetalleProducto> ? DetalleProductos { get; set; } = null!;
